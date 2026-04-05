@@ -239,33 +239,18 @@ const indiaData = [
         attractions: [
             {
                 name: 'Hampi Ruins', type: 'Ancient Wonder',
-                image: 'https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1689946727963-be60e05fe278?auto=format&fit=crop&w=600&q=80',
                 desc: 'Explore the otherworldly landscape of giant boulders and magnificent temple ruins from the Vijayanagara Empire.'
             },
             {
-                name: 'Coorg Coffee Estates', type: 'Nature Trails',
-                image: 'https://images.unsplash.com/photo-1609141010173-19eb7b37d7a4?auto=format&fit=crop&w=600&q=80',
-                desc: 'Often called the Scotland of India. Walk through misty, aromatic coffee and spice plantations in the lush Western Ghats.'
-            },
-            {
                 name: 'Mysore Palace', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1588629739575-b6d61081b95f?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1665376620694-fc0c4bab7294?auto=format&fit=crop&w=600&q=80',
                 desc: 'Be dazzled by the incredibly ornate interiors of this royal palace, which lights up beautifully with nearly 100,000 bulbs on Sundays.'
             },
             {
-                name: 'Bandipur National Park', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1558595914-41d3b5bdf51a?auto=format&fit=crop&w=600&q=80',
-                desc: 'Take a safari through this premier Tiger Reserve, also known for its large populations of Indian elephants and spotted deer.'
-            },
-            {
                 name: 'Gokarna Beaches', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1583095368395-5d9c72e2cfc2?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1606163339132-45f3225ed3a9?auto=format&fit=crop&w=600&q=80',
                 desc: 'A more tranquil alternative to Goa. Trek across rocky cliff sides to discover pristine, secluded coves like Om Beach and Half Moon Beach.'
-            },
-            {
-                name: 'Jog Falls', type: 'Nature',
-                image: 'https://images.unsplash.com/photo-1625442566113-d30ed4cc9db6?auto=format&fit=crop&w=600&q=80',
-                desc: 'Witness the sheer power of India’s second-highest plunge waterfall, dropping dramatically through lush green forested cliffs.'
             }
         ]
     },
@@ -279,17 +264,17 @@ const indiaData = [
         attractions: [
             {
                 name: 'Meenakshi Temple', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1603507208466-9818ab44558e?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1732883247945-896e63ee644a?auto=format&fit=crop&w=600&q=80',
                 desc: 'Get lost in the dizzying detail of this historic Hindu temple complex in Madurai, famous for its towering, colorful gopurams.'
             },
             {
                 name: 'Ooty Botanical Gardens', type: 'Nature',
-                image: 'https://images.unsplash.com/photo-1591834925828-568eb2a1e649?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1683863655647-b37baeb9fd99?auto=format&fit=crop&w=600&q=80',
                 desc: 'Take the UNESCO-listed Nilgiri Mountain Railway toy train up to Ooty to enjoy sprawling, meticulously maintained British-era gardens.'
             },
             {
                 name: 'Mahabalipuram Monuments', type: 'Ancient Wonder',
-                image: 'https://images.unsplash.com/photo-1621691168128-4034fc487e49?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1586708682826-4256fe5b68b6?auto=format&fit=crop&w=600&q=80',
                 desc: 'Marvel at 7th-century rock-cut monolithic temples and the stunning Shore Temple overlooking the waves of the Bay of Bengal.'
             },
             {
@@ -299,12 +284,12 @@ const indiaData = [
             },
             {
                 name: 'Kanyakumari Sunset', type: 'Scenic Spot',
-                image: 'https://images.unsplash.com/photo-1590403362145-2f94943f6d76?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1641811465826-dbb8ccc6d612?auto=format&fit=crop&w=600&q=80',
                 desc: 'Visit the absolute southern tip of the Indian subcontinent, where three oceans meet, to witness breathtaking sunrise and sunset views.'
             },
             {
                 name: 'Kodaikanal Lake', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1616216666173-04d309d4c728?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1667146088460-9c99e594e16b?auto=format&fit=crop&w=600&q=80',
                 desc: 'Rent a bicycle or a rowboat to explore this star-shaped, man-made lake enveloped by mist and cool, refreshing mountain air.'
             }
         ]

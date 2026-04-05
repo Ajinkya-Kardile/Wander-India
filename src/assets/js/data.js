@@ -4,7 +4,7 @@ const indiaData = [
         name: 'Kerala',
         tag: 'Tropical Serenity',
         styles: ['wellness', 'wildlife', 'heritage'],
-        image: 'https://images.unsplash.com/photo-1602216056096-3b503fad11c2?auto=format&fit=crop&w=1400&q=80',
+        image: 'https://images.unsplash.com/photo-1572002265188-173c1a2f6699?auto=format&fit=crop&w=1400&q=80',
         description: 'Drift through emerald backwaters on a traditional houseboat, surrounded by swaying palms. Kerala offers a slow-paced, deeply rejuvenating connection with nature away from the bustling cities.',
         attractions: [
             {
@@ -164,7 +164,7 @@ const indiaData = [
         name: 'Maharashtra',
         tag: 'Vibrant & Diverse',
         styles: ['heritage', 'wildlife', 'wellness'],
-        image: 'https://images.unsplash.com/photo-1522069169874-c091f60b4e33?auto=format&fit=crop&w=1400&q=80',
+        image: 'https://images.unsplash.com/photo-1585889574476-af7bcb00d9c3?auto=format&fit=crop&w=1400&q=80',
         description: 'From the bustling streets of Mumbai to the ancient rock-cut caves and serene Western Ghats, Maharashtra offers a dynamic mix of history, nature, and modern life.',
         attractions: [
             {
@@ -244,7 +244,7 @@ const indiaData = [
         name: 'Uttarakhand',
         tag: 'Land of the Gods',
         styles: ['wellness', 'wildlife', 'heritage'],
-        image: 'https://images.unsplash.com/photo-1610641121010-098d1a1b15ea?auto=format&fit=crop&w=1400&q=80',
+        image: 'https://images.unsplash.com/photo-1709623868300-e3b78cad10e1?auto=format&fit=crop&w=1400&q=80',
         description: 'Known for its stunning natural environment of the Himalayas, Bhabar, and Terai. Perfect for white-water rafting, tranquil meditation, and pristine mountain trekking.',
         attractions: [
             {
@@ -284,7 +284,7 @@ const indiaData = [
         name: 'Karnataka',
         tag: 'Ruins & Rainforests',
         styles: ['heritage', 'wellness', 'wildlife'],
-        image: 'https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=1400&q=80',
+        image: 'https://plus.unsplash.com/premium_photo-1697730504977-26847b1f1f91?auto=format&fit=crop&w=1400&q=80',
         description: 'A spectacular blend of ancient sculpted temples, lush green coffee plantations, modern tech hubs, and pristine, hidden coastal beaches.',
         attractions: [
             {
@@ -324,7 +324,7 @@ const indiaData = [
         name: 'Tamil Nadu',
         tag: 'Dravidian Splendor',
         styles: ['heritage', 'wellness', 'wildlife'],
-        image: 'https://images.unsplash.com/photo-1603507208466-9818ab44558e?auto=format&fit=crop&w=1400&q=80',
+        image: 'https://images.unsplash.com/photo-1599679400256-d4781a10bf2b?auto=format&fit=crop&w=1400&q=80',
         description: 'The cultural heartland of South India, boasting towering, colorful temple gateways, classical arts, cool hill stations, and the southernmost tip of India.',
         attractions: [
             {

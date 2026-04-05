@@ -14,7 +14,7 @@ const indiaData = [
             },
             {
                 name: 'Munnar Tea Plantations', type: 'Nature Trails',
-                image: 'https://images.unsplash.com/photo-1593693411515-c20261bbdd66?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1697730314165-2cd71dc3a6a4?auto=format&fit=crop&w=600&q=80',
                 desc: 'Escape to the cool highlands. Trek through endless rolling hills blanketed in vibrant green tea bushes and breathe in the fresh mountain air.'
             },
             {
@@ -24,7 +24,7 @@ const indiaData = [
             },
             {
                 name: 'Wayanad Wildlife Sanctuary', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1629235070263-fb713ee0c388?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1730160764063-c9ceff24a235?auto=format&fit=crop&w=600&q=80',
                 desc: 'Explore lush green forests packed with elephants, leopards, and diverse bird species. A true haven for nature and wildlife lovers.'
             },
             {
@@ -34,7 +34,7 @@ const indiaData = [
             },
             {
                 name: 'Thekkady National Park', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1585467316688-25114fdb2323?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1716404985743-8c0e007cb358?auto=format&fit=crop&w=600&q=80',
                 desc: 'Experience a unique boat safari on Periyar Lake where you can spot wild herds of elephants bathing on the jungle shores.'
             }
         ]
@@ -49,12 +49,12 @@ const indiaData = [
         attractions: [
             {
                 name: 'Udaipur City Palace', type: 'Architecture',
-                image: 'https://images.unsplash.com/photo-1615836245337-f589c36ec3b9?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1700985959163-ed9aa14a99bd?auto=format&fit=crop&w=600&q=80',
                 desc: 'A magnificent complex of palaces built over nearly 400 years, offering sweeping views of Lake Pichola and its floating marble palaces.'
             },
             {
                 name: 'Jaisalmer Desert Camp', type: 'Adventure',
-                image: 'https://images.unsplash.com/photo-1534645851457-b08e2f0732dc?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1605425368891-5533a8ede6c2?auto=format&fit=crop&w=600&q=80',
                 desc: 'Spend a night under the stars in the vast Thar Desert. Enjoy camel safaris, folk music, and the eerie silence of the dunes.'
             },
             {
@@ -64,17 +64,17 @@ const indiaData = [
             },
             {
                 name: 'Mehrangarh Fort', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1584988448882-962657e0349b?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1580389672842-9755d100d18e?auto=format&fit=crop&w=600&q=80',
                 desc: 'One of the largest forts in India, rising perpendicularly and impregnable from a rocky hill overlooking the "Blue City" of Jodhpur.'
             },
             {
                 name: 'Ranthambore Safari', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1551802958-f716ebf01037?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1725990076174-a3448eb86e76?auto=format&fit=crop&w=600&q=80',
                 desc: 'Embark on a thrilling jeep safari through ancient ruins and dry deciduous forests to catch a glimpse of the majestic Bengal Tiger.'
             },
             {
                 name: 'Pushkar Holy Lake', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1563200056-1463ebbf3db5?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1723802627333-84dd17e016eb?auto=format&fit=crop&w=600&q=80',
                 desc: 'Find peace by the sacred waters of Pushkar Lake, surrounded by hundreds of temples and echoing with evening prayers.'
             }
         ]
@@ -89,12 +89,12 @@ const indiaData = [
         attractions: [
             {
                 name: 'Spiti Valley Drive', type: 'Scenic Route',
-                image: 'https://images.unsplash.com/photo-1605649487212-4dcb18c0cb52?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1652514284048-a297d43ab05d?auto=format&fit=crop&w=600&q=80',
                 desc: 'A rugged, high-altitude desert road trip offering lunar landscapes, ancient monasteries clinging to cliffs, and starry night skies.'
             },
             {
                 name: 'Kasol Pine Treks', type: 'Hiking',
-                image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1652501835253-c6d3e5fbfd15?auto=format&fit=crop&w=600&q=80',
                 desc: 'Nestled in the Parvati Valley, Kasol serves as a basecamp for beautiful hikes through dense pine forests to remote mountain villages.'
             },
             {
@@ -109,12 +109,12 @@ const indiaData = [
             },
             {
                 name: 'Dharamshala Monasteries', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1626569109761-002f232ce5dc?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1755607167323-9c0160998e38?auto=format&fit=crop&w=600&q=80',
                 desc: 'Experience the spiritual aura of McLeod Ganj, the residence of the Dalai Lama, surrounded by colorful prayer flags and monks.'
             },
             {
                 name: 'Dalhousie Meadows', type: 'Nature Trails',
-                image: 'https://images.unsplash.com/photo-1593693411515-c20261bbdd66?auto=format&fit=crop&w=600&q=80',
+                image: 'https://lakshmisharath.com/wp-content/uploads/2018/09/Dalhousie-miniswiss.jpg?auto=format&fit=crop&w=600&q=80',
                 desc: 'Wander through the mini-Switzerland of India, featuring lush green meadows, dense pine valleys, and Scottish-style architecture.'
             }
         ]
@@ -134,28 +134,13 @@ const indiaData = [
             },
             {
                 name: 'Fontainhas Quarter', type: 'Heritage Walk',
-                image: 'https://images.unsplash.com/photo-1586861788510-5ee42cb70311?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1648367819123-19d2ffe43f3a?auto=format&fit=crop&w=600&q=80',
                 desc: 'Wander the narrow, winding streets of Asia’s only Latin Quarter, admiring the beautifully preserved brightly colored Portuguese homes.'
             },
             {
                 name: 'Dudhsagar Falls', type: 'Nature',
-                image: 'https://images.unsplash.com/photo-1632001150499-52db38f5f0b5?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1614054063017-a3fdd14cbfae?auto=format&fit=crop&w=600&q=80',
                 desc: 'A majestic four-tiered waterfall located deep within the Bhagwan Mahaveer Sanctuary. The rushing water visually resembles a "Sea of Milk".'
-            },
-            {
-                name: 'Basilica of Bom Jesus', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1614088924617-646bc56012e1?auto=format&fit=crop&w=600&q=80',
-                desc: 'A UNESCO World Heritage site and fine example of Baroque architecture, holding the mortal remains of St. Francis Xavier.'
-            },
-            {
-                name: 'Anjuna Flea Market', type: 'Culture',
-                image: 'https://images.unsplash.com/photo-1560179406-1c6c60e0dc26?auto=format&fit=crop&w=600&q=80',
-                desc: 'A vibrant, bustling Wednesday market where you can find everything from handmade jewelry and bohemian clothing to exotic spices.'
-            },
-            {
-                name: 'Bhagwan Mahavir Sanctuary', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1564750506828-971cdd462a69?auto=format&fit=crop&w=600&q=80',
-                desc: 'Explore the dense Western Ghats jungles, home to black panthers, barking deer, and a stunning variety of exotic birds.'
             }
         ]
     },
@@ -169,7 +154,7 @@ const indiaData = [
         attractions: [
             {
                 name: 'Ajanta & Ellora Caves', type: 'Ancient Wonder',
-                image: 'https://images.unsplash.com/photo-1621691168128-4034fc487e49?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1697730364913-61ebe23e2dd7?auto=format&fit=crop&w=600&q=80',
                 desc: 'Marvel at these magnificent rock-cut caves featuring exquisite ancient Indian art, paintings, and sculptures dating back over two millennia.'
             },
             {
@@ -179,22 +164,22 @@ const indiaData = [
             },
             {
                 name: 'Mahabaleshwar Trek', type: 'Nature',
-                image: 'https://images.unsplash.com/photo-1625834317364-b32c140fd360?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1574323109400-7477368b7b03?auto=format&fit=crop&w=600&q=80',
                 desc: 'A vast plateau bound by valleys on all sides, famous for strawberries, spectacular viewpoints, and beautiful historic forts.'
             },
             {
                 name: 'Tadoba Tiger Reserve', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1588656113222-19e48db06d40?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1710605432537-742931a6aeef?auto=format&fit=crop&w=600&q=80',
                 desc: 'Embark on an open-top gypsy safari in Maharashtra’s oldest and largest national park, famously known as the jewel of Vidarbha.'
             },
             {
                 name: 'Lonavala Viewpoints', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1625834317364-b32c140fd360?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1737347799179-40be496e5937?auto=format&fit=crop&w=600&q=80',
                 desc: 'A popular hill station retreat, offering foggy valleys, cascading waterfalls during monsoons, and deep relaxing nature vibes.'
             },
             {
                 name: 'Raigad Fort', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1623912165997-6c2e3dd7443d?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1560756769-068d6638b559?auto=format&fit=crop&w=600&q=80',
                 desc: 'Take a thrilling ropeway ride to the top of this majestic hill fort, once the proud capital of the Maratha Empire under Shivaji Maharaj.'
             }
         ]
@@ -209,33 +194,18 @@ const indiaData = [
         attractions: [
             {
                 name: 'Taj Mahal Agra', type: 'Wonder of the World',
-                image: 'https://images.unsplash.com/photo-1564507592224-2c1513fbd80f?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1631781101051-121237b6c7cb?auto=format&fit=crop&w=600&q=80',
                 desc: 'Witness the breathtaking ivory-white marble mausoleum on the right bank of the river Yamuna, universally admired as a masterpiece of world heritage.'
             },
             {
                 name: 'Varanasi Ghats', type: 'Spiritual',
-                image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1697730304380-2ed1c7aea373?auto=format&fit=crop&w=600&q=80',
                 desc: 'Experience the soul-stirring Ganga Aarti at dusk, a visually stunning spiritual ceremony along the ancient stone steps leading to the river Ganges.'
             },
             {
-                name: 'Fatehpur Sikri', type: 'Architecture',
-                image: 'https://images.unsplash.com/photo-1600155729720-6d1ff8f8ed97?auto=format&fit=crop&w=600&q=80',
-                desc: 'Explore the beautifully preserved red sandstone ghost town, briefly the capital of the Mughal Empire under Emperor Akbar.'
-            },
-            {
                 name: 'Mathura & Vrindavan', type: 'Heritage',
-                image: 'https://images.unsplash.com/photo-1616010079549-ee42c88d8b6b?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1756454487537-1fa7ad135349?auto=format&fit=crop&w=600&q=80',
                 desc: 'Immerse yourself in the mythology and devotion of the birthplace of Lord Krishna, featuring hundreds of colorful ancient temples.'
-            },
-            {
-                name: 'Dudhwa National Park', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1593465135759-453db518f886?auto=format&fit=crop&w=600&q=80',
-                desc: 'Discover the rich biodiversity of the Terai region, home to tigers, swamp deer, and a breathtaking array of migratory birds.'
-            },
-            {
-                name: 'Bara Imambara', type: 'Architecture',
-                image: 'https://images.unsplash.com/photo-1587313886542-a892b15e4f4d?auto=format&fit=crop&w=600&q=80',
-                desc: 'Lose yourself in the Bhool Bhulaiya (labyrinth) of this grand shrine complex in Lucknow, known for its incredible unsupported arched ceilings.'
             }
         ]
     },
@@ -249,33 +219,13 @@ const indiaData = [
         attractions: [
             {
                 name: 'Rishikesh Rafting', type: 'Adventure',
-                image: 'https://images.unsplash.com/photo-1598228308290-a15d02324209?auto=format&fit=crop&w=600&q=80',
+                image: 'https://plus.unsplash.com/premium_photo-1661891887710-0528c1d76b92?auto=format&fit=crop&w=600&q=80',
                 desc: 'Navigate the thrilling rapids of the Ganges River, followed by a peaceful evening yoga session on the sandy riverbanks.'
             },
             {
-                name: 'Valley of Flowers', type: 'Nature Trails',
-                image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80',
-                desc: 'Trek into a high-altitude Himalayan valley renowned for its meadows of endemic alpine flowers and outstanding natural beauty.'
-            },
-            {
-                name: 'Jim Corbett Safari', type: 'Wildlife',
-                image: 'https://images.unsplash.com/photo-1518182170546-0766de6b6aad?auto=format&fit=crop&w=600&q=80',
-                desc: 'Embark on a thrilling jeep safari through India’s oldest national park to catch a glimpse of the majestic Bengal tiger in its natural habitat.'
-            },
-            {
-                name: 'Nainital Lake', type: 'Wellness',
-                image: 'https://images.unsplash.com/photo-1598424263660-c3d3ef0c28ec?auto=format&fit=crop&w=600&q=80',
-                desc: 'Enjoy a peaceful boat ride on this crescent-shaped high-altitude lake, surrounded by verdant forested hills.'
-            },
-            {
                 name: 'Kedarnath Temple', type: 'Spiritual Heritage',
-                image: 'https://images.unsplash.com/photo-1626714486845-6688b909564f?auto=format&fit=crop&w=600&q=80',
+                image: 'https://images.unsplash.com/photo-1649147313351-c86537fda0eb?auto=format&fit=crop&w=600&q=80',
                 desc: 'A strenuous but profoundly rewarding trek leads to this ancient stone Shiva temple set against a backdrop of snow-covered peaks.'
-            },
-            {
-                name: 'Auli Ski Resort', type: 'Adventure',
-                image: 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=600&q=80',
-                desc: 'Take the cable car up to India’s premier ski destination, offering sweeping, panoramic views of the Nanda Devi mountain range.'
             }
         ]
     },
@@ -371,11 +321,11 @@ const styleMeta = {
     'heritage': {
         title: 'Royal Heritage',
         desc: 'Step back in time and experience the grandeur of India\'s ancient forts, palaces, and empires.',
-        image: 'https://images.unsplash.com/photo-1534160490001-c88c7f9984eb?q=80&w=1400&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1728578610524-e88049ae886d?q=80&w=1400&auto=format&fit=crop'
     },
     'wildlife': {
         title: 'Wildlife Safaris',
         desc: 'Encounter majestic creatures and untamed nature in their natural habitats across lush national parks.',
-        image: 'https://images.unsplash.com/photo-1518182170546-0766de6b6aad?q=80&w=1400&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1585889574476-af7bcb00d9c3?q=80&w=1400&auto=format&fit=crop'
     }
 };

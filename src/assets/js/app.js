@@ -66,7 +66,6 @@ function renderHomeGallery() {
     });
 }
 
-// --- DYNAMIC STYLE DETAILS LOGIC ---
 function openStyleDetails(styleId) {
     const meta = styleMeta[styleId];
     if(!meta) return;
@@ -80,53 +79,76 @@ function openStyleDetails(styleId) {
     const styleAttractionsContainer = document.getElementById('style-attractions-container');
     styleAttractionsContainer.innerHTML = ''; 
 
+    // Keyword mapping to filter specific places by their type
+    const styleKeywords = {
+        'wellness': ['wellness', 'nature', 'relax', 'leisure', 'scenic'],
+        'heritage': ['heritage', 'architecture', 'ancient', 'culture', 'wonder', 'spiritual'],
+        'wildlife': ['wildlife', 'safari']
+    };
+    const keywords = styleKeywords[styleId] || [styleId];
+
     const matchedStates = indiaData.filter(state => state.styles && state.styles.includes(styleId));
 
     if(matchedStates.length === 0) {
         styleAttractionsContainer.innerHTML = '<p style="text-align: center; color: var(--text-muted); font-size: 1.2rem;">More destinations for this style coming soon!</p>';
     } else {
-        matchedStates.forEach(state => {
-            // Create a section header for the State
-            let stateSectionHtml = `
-                <div style="margin-bottom: 80px; padding: 0 5%; max-width: 1400px; margin-left: auto; margin-right: auto;">
-                    <h2 class="serif" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 30px; border-bottom: 2px solid #E8ECEB; padding-bottom: 15px; display: inline-block;">${state.name}</h2>
-                    <div class="places-grid">
-            `;
+        let hasPlaces = false;
 
-            // Inject the place cards for this state
-            state.attractions.forEach(att => {
-                const isAdded = itinerary.includes(att.name);
-                const btnText = isAdded ? '<i class="fa-solid fa-check"></i> Added to Itinerary' : '<i class="fa-solid fa-plus"></i> Add to Itinerary';
-                const btnClass = isAdded ? 'add-btn added' : 'add-btn';
-                const safeId = att.name.replace(/[^a-zA-Z0-9]/g, '');
-                const safeName = att.name.replace(/'/g, "\\'"); 
+        matchedStates.forEach(state => {
+            // Filter the state's attractions to ONLY include those matching the style
+            const matchedAttractions = state.attractions.filter(att => 
+                keywords.some(keyword => att.type.toLowerCase().includes(keyword))
+            );
+
+            if (matchedAttractions.length > 0) {
+                hasPlaces = true;
+                // Create a section header for the State
+                let stateSectionHtml = `
+                    <div style="margin-bottom: 80px; padding: 0 5%; max-width: 1400px; margin-left: auto; margin-right: auto;">
+                        <h2 class="serif" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 30px; border-bottom: 2px solid #E8ECEB; padding-bottom: 15px; display: inline-block;">${state.name}</h2>
+                        <div class="places-grid">
+                `;
+
+                // Inject ONLY the matching place cards
+                matchedAttractions.forEach(att => {
+                    const isAdded = itinerary.includes(att.name);
+                    const btnText = isAdded ? '<i class="fa-solid fa-check"></i> Added to Itinerary' : '<i class="fa-solid fa-plus"></i> Add to Itinerary';
+                    const btnClass = isAdded ? 'add-btn added' : 'add-btn';
+                    const safeId = att.name.replace(/[^a-zA-Z0-9]/g, '');
+                    const safeName = att.name.replace(/'/g, "\\'"); 
+
+                    stateSectionHtml += `
+                        <div class="place-card">
+                            <img src="${att.image}" alt="${att.name}">
+                            <div class="place-content">
+                                <span>${att.type}</span>
+                                <h3 class="serif">${att.name}</h3>
+                                <p>${att.desc}</p>
+                                <button class="${btnClass}" id="btn-style-${safeId}" onclick="toggleTripItem('${safeName}', this, event)">
+                                    ${btnText}
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                });
 
                 stateSectionHtml += `
-                    <div class="place-card">
-                        <img src="${att.image}" alt="${att.name}">
-                        <div class="place-content">
-                            <span>${att.type}</span>
-                            <h3 class="serif">${att.name}</h3>
-                            <p>${att.desc}</p>
-                            <button class="${btnClass}" id="btn-style-${safeId}" onclick="toggleTripItem('${safeName}', this, event)">
-                                ${btnText}
-                            </button>
                         </div>
                     </div>
                 `;
-            });
-
-            stateSectionHtml += `
-                    </div>
-                </div>
-            `;
-            
-            styleAttractionsContainer.insertAdjacentHTML('beforeend', stateSectionHtml);
+                
+                styleAttractionsContainer.insertAdjacentHTML('beforeend', stateSectionHtml);
+            }
         });
+
+        if (!hasPlaces) {
+            styleAttractionsContainer.innerHTML = '<p style="text-align: center; color: var(--text-muted); font-size: 1.2rem;">Specific places for this style coming soon!</p>';
+        }
     }
 
     navigate('style-details');
 }
+
 
 // --- DYNAMIC STATE DETAILS LOGIC ---
 function openStateDetails(id) {

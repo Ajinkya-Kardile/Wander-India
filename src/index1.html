@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander | Discover India</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+    <nav>
+        <a href="#" class="brand serif" onclick="navigate('home')"><i class="fa-solid fa-leaf"></i> Wander.</a>
+        
+        <ul class="nav-links">
+            <li><a onclick="navigate('home')" class="active">Home</a></li>
+            <li><a onclick="navigateAndScroll('home', 'destinations')">Destinations</a></li>
+            <li><a onclick="navigateAndScroll('home', 'styles')">Travel Styles</a></li>
+            <li><a onclick="navigate('about')">About Us</a></li>
+            <li><a onclick="navigate('contact')">Contact</a></li>
+        </ul>
+
+        <button class="trip-btn" onclick="toggleDrawer()">
+            <i class="fa-solid fa-suitcase-rolling"></i> My Itinerary
+            <span class="badge" id="trip-counter">0</span>
+        </button>
+    </nav>
+
+    <!-- ================= PAGE: HOME ================= -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-pill">Premium Travel Guide</div>
+                <h1>Discover the <i>soul</i><br>of the subcontinent.</h1>
+                <p>A collection of hand-picked destinations. Plan your perfect escape through serene backwaters, ancient palaces, and rugged mountains.</p>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1000&q=80" alt="India Landscape Main" class="hero-img-main">
+                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=600&q=80" alt="India Landscape Sub" class="hero-img-sub">
+                
+                <div class="floating-badge badge-top">
+                    <i class="fa-solid fa-star"></i>
+                    <div class="badge-text">
+                        <strong>4.9/5</strong>
+                        <span>Average Rating</span>
+                    </div>
+                </div>
+                <div class="floating-badge badge-bottom">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="badge-text">
+                        <strong>50+</strong>
+                        <span>Curated Spots</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="destinations">
+            <div class="section-header">
+                <h2 class="serif">Trending Destinations</h2>
+                <p>Explore our most loved regions across India.</p>
+            </div>
+            <div class="gallery-container" id="gallery-container">
+                <!-- Cards injected via JavaScript -->
+            </div>
+        </section>
+
+        <section class="travel-styles" id="styles">
+            <div class="section-header">
+                <h2 class="serif">Travel by Style</h2>
+                <p>Find the experience that speaks to you.</p>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card" onclick="openStyleDetails('wellness')">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop" class="style-bg" alt="Wellness">
+                    <div class="style-content">
+                        <h3 class="serif">Wellness & Yoga</h3>
+                        <p>Rejuvenate in the foothills of the Himalayas.</p>
+                    </div>
+                </div>
+                <div class="style-card" onclick="openStyleDetails('heritage')">
+                    <img src="https://images.unsplash.com/photo-1534160490001-c88c7f9984eb?q=80&w=800&auto=format&fit=crop" class="style-bg" alt="Heritage">
+                    <div class="style-content">
+                        <h3 class="serif">Royal Heritage</h3>
+                        <p>Live like royalty in restored ancient forts.</p>
+                    </div>
+                </div>
+                <div class="style-card" onclick="openStyleDetails('wildlife')">
+                    <img src="https://images.unsplash.com/photo-1518182170546-0766de6b6aad?q=80&w=800&auto=format&fit=crop" class="style-bg" alt="Wildlife">
+                    <div class="style-content">
+                        <h3 class="serif">Wildlife Safaris</h3>
+                        <p>Track the majestic Bengal tiger in the wild.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= PAGE: STYLE DETAILS DYNAMIC ================= -->
+    <div id="style-details" class="page">
+        <div class="state-hero">
+            <button class="back-nav" onclick="navigate('home')"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
+            <img src="" id="style-hero-img" class="state-hero-img" alt="Style Hero Image">
+            <div class="state-hero-content">
+                <div class="hero-pill" style="color: white; border: 1px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.1);">Travel Style</div>
+                <h1 class="serif" id="style-title">Style Name</h1>
+                <p id="style-desc">Style description goes here.</p>
+            </div>
+        </div>
+
+        <section class="attractions-section" style="padding-top: 80px;" id="style-attractions-container">
+            <!-- State-wise sections and places injected via JS -->
+        </section>
+    </div>
+
+    <!-- ================= PAGE: STATE DETAILS DYNAMIC ================= -->
+    <div id="state-details" class="page">
+        <div class="state-hero">
+            <button class="back-nav" onclick="navigate('home')"><i class="fa-solid fa-arrow-left"></i> Back to Map</button>
+            <img src="" id="sd-hero-img" class="state-hero-img" alt="State Hero Image">
+            <div class="state-hero-content">
+                <div class="hero-pill" id="sd-tag" style="color: white; border: 1px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.1);">Tag</div>
+                <h1 class="serif" id="sd-title">State Name</h1>
+                <p id="sd-desc">State description goes here.</p>
+            </div>
+        </div>
+
+        <div class="attractions-section">
+            <h2 class="serif">Iconic Places to Visit</h2>
+            <div class="places-grid" id="sd-places-grid">
+                <!-- Places injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= PAGE: ABOUT ================= -->
+    <div id="about" class="page">
+        <section class="internal-hero">
+            <div class="hero-pill">Our Story</div>
+            <h1 class="serif">Redefining Travel</h1>
+        </section>
+        <section class="internal-content">
+            <p style="margin-bottom: 20px;">At Wander, we believe that travel should be more than just checking boxes off a tourist list. It should be deeply personal, incredibly beautiful, and completely effortless.</p>
+            <p>Founded by passionate explorers, our platform was designed to strip away the overwhelming noise of travel planning. We hand-select only the finest stays, the most authentic cultural experiences, and the most breathtaking vistas India has to offer.</p>
+        </section>
+    </div>
+
+    <!-- ================= PAGE: CONTACT ================= -->
+    <div id="contact" class="page">
+        <section class="internal-hero">
+            <div class="hero-pill">Get in Touch</div>
+            <h1 class="serif">Let's Plan Your Escape</h1>
+            <p>Have a question or need a custom itinerary? Drop us a line.</p>
+        </section>
+        <section class="contact-form">
+            <form onsubmit="event.preventDefault(); alert('Message Sent! (Demo)');">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="jane@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>How can we help?</label>
+                    <textarea placeholder="Tell us about your dream trip..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- ================= GLOBAL ELEMENTS ================= -->
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-brand serif"><i class="fa-solid fa-leaf"></i> Wander.</span>
+            <p>Join our exclusive mailing list for hidden gems and luxury travel inspiration delivered monthly.</p>
+            <div class="footer-newsletter">
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Wander Tour Guide. All rights reserved. Designed for exploration.
+        </div>
+    </footer>
+
+    <!-- Side Itinerary Drawer -->
+    <div class="drawer" id="itinerary-drawer">
+        <div class="drawer-header">
+            <h3 class="serif">Your Plan</h3>
+            <button class="icon-btn" onclick="toggleDrawer()"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="drawer-items" id="drawer-items">
+            <div class="empty-state" id="empty-state">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>Your journey hasn't started yet.<br>Add experiences to your itinerary.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript Files -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
